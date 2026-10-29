@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github-dark.css";
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, textarea { font: inherit; }
+
+.markdown-content { font-size: 0.925rem; line-height: 1.6; overflow-wrap: anywhere; }
+.markdown-content > :first-child { margin-top: 0; }
+.markdown-content > :last-child { margin-bottom: 0; }
+.markdown-content p, .markdown-content ul, .markdown-content ol, .markdown-content pre { margin: 0.65rem 0; }
+.markdown-content ul, .markdown-content ol { padding-left: 1.35rem; }
+.markdown-content li + li { margin-top: 0.2rem; }
+.markdown-content code { border-radius: 0.3rem; background: rgb(15 23 42); padding: 0.12rem 0.3rem; font-size: 0.85em; }
+.markdown-content pre { overflow-x: auto; border-radius: 0.65rem; background: rgb(2 6 23); padding: 0.85rem; }
+.markdown-content pre code { padding: 0; background: transparent; }
+.markdown-content a { color: rgb(103 232 249); text-decoration: underline; }
+.typing-dot { width: 0.35rem; height: 0.35rem; border-radius: 999px; background: currentColor; animation: typing 1s infinite alternate; }
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typing { to { opacity: 0.25; transform: translateY(-2px); } }
